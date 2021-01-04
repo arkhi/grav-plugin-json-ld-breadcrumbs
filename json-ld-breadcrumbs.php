@@ -62,6 +62,18 @@ class JSONLDBreadcrumbsPlugin extends Plugin
         ]);
     }
 
+    /**
+     * Is the current page is the root page (or an alias)?
+     *
+     * @param Page $page The page to check
+     *
+     * @return  bool
+     */
+    public function isRoot(Page $page): bool
+    {
+        return $page->url() === '/';
+    }
+
 
     /**
      * Get pages in the branch of the current page, up to the root.
@@ -81,7 +93,7 @@ class JSONLDBreadcrumbsPlugin extends Plugin
 
         $parent = $page->parent();
 
-        if ($parent) {
+        if ($parent && !$this->isRoot($page)) {
             $branch = $this->getBranchUp($parent, $branch);
         }
 
@@ -107,10 +119,8 @@ class JSONLDBreadcrumbsPlugin extends Plugin
         ksort($pages);
 
         foreach ($pages as $path => $page) {
-            $IAmRoot = $page->url() === '/';
-
-            if ($IAmRoot || $page->routable()) {
-                $name = $IAmRoot
+            if ($this->isRoot($page) || $page->routable()) {
+                $name = $this->isRoot($page)
                     ? 'Home'
                     : $page->title();
 
