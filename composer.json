@@ -1,0 +1,29 @@
+{
+  "name": "arkhi/json-ld-breadcrumbs",
+  "type": "grav-plugin",
+  "description": "Add a Breadcrumbs JSON-LD definition in the `<head>` of the current page.",
+  "keywords": ["plugin"],
+  "homepage": "https://github.com/arkhi/grav-plugin-json-ld-breadcrumbs",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Fabien Basmaison",
+      "email": "contact@arkhi.org",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grav\\Plugin\\JSONLDBreadcrumbs\\": "classes/"
+    },
+    "classmap":  ["json-ld-breadcrumbs.php"]
+  },
+  "config": {
+    "platform": {
+      "php": "7.1.3"
+    }
+  }
+}
