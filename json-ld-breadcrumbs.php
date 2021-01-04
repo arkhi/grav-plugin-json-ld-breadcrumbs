@@ -140,12 +140,9 @@ class JSONLDBreadcrumbsPlugin extends Plugin
         $page   = $event['page'];
         $assets = $this->grav['assets'];
 
-        // Grav does not natively allow to specify the type of JS and wraps the
-        // JS assets within `<script>…</script>`, so… hack.
         $assets->addInlineJs(
-            '</script><script type="application/ld+json">'
-            . $this->getJsonBreadcrumbs($page)
-            . '</script><script>'
+            $this->getJsonBreadcrumbs($page),
+            ['type' => 'application/ld+json']
         );
     }
 }
