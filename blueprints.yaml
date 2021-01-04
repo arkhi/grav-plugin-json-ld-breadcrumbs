@@ -1,7 +1,7 @@
 name: JSON-LD Breadcrumbs
 slug: json-ld-breadcrumbs
 type: plugin
-version: 0.1.0
+version: 1.0.2
 description: Add a Breadcrumbs JSON-LD definition in the `<head>` of the current page.
 icon: plug
 author:
