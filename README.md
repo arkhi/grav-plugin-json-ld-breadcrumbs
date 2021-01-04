@@ -9,7 +9,7 @@ It will add a [JSON-LD] [Breadcrumbs definition][schema BreadcrumbList] in the `
 You can installl this plugin by following any of the [options available][install plugins] with the _NAME_ `json-ld-breadcrumbs`:
 
 - The **GPM** (Grav Package Manager) with `bin/gpm install json-ld-breadcrumbs`.
-- The **manual** method by unzipping the content of the [zip file](https://github.com/arkhi/grav-plugin-json-ld-breadcrumbs/archive/master.zip) into `user/plugins/json-ld-breadcrumbs`.
+- The **manual** method by unzipping the content of the [zip file](https://framagit.org/arkhi/grav-plugin-json-ld-breadcrumbs/-/archive/master/grav-plugin-json-ld-breadcrumbs-master.zip) into `user/plugins/json-ld-breadcrumbs`.
 
 ## Configuration
 

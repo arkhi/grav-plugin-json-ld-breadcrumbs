@@ -7,10 +7,10 @@ icon: plug
 author:
   name: Fabien Basmaison
   email: contact@arkhi.org
-homepage: https://github.com/arkhi/grav-plugin-json-ld-breadcrumbs
+homepage: https://framagit.org/arkhi/grav-plugin-json-ld-breadcrumbs
 keywords: grav, plugin, pages, microdata, JSON-LD, semantic
-bugs: https://github.com/arkhi/grav-plugin-json-ld-breadcrumbs/issues
-docs: https://github.com/arkhi/grav-plugin-json-ld-breadcrumbs/blob/develop/README.md
+bugs: https://framagit.org/arkhi/grav-plugin-json-ld-breadcrumbs/issues
+docs: https://framagit.org/arkhi/grav-plugin-json-ld-breadcrumbs/-/blob/master/README.md
 license: MIT
 
 # This plugin has been tested on these versions.

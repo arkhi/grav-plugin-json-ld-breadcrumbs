@@ -3,7 +3,7 @@
   "type": "grav-plugin",
   "description": "Add a Breadcrumbs JSON-LD definition in the `<head>` of the current page.",
   "keywords": ["plugin"],
-  "homepage": "https://github.com/arkhi/grav-plugin-json-ld-breadcrumbs",
+  "homepage": "https://framagit.org/arkhi/grav-plugin-json-ld-breadcrumbs",
   "license": "MIT",
   "authors": [
     {
